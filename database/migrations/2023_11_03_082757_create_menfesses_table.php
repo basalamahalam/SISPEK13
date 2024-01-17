@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('from', 25);
             $table->string('to', 25);
             $table->string('message');
-            $table->integer('status')->default(0);
+            $table->enum('status', ['Pending', 'Accept', 'Terbaik'])->default('Pending');
             $table->timestamp('submit_at');
             $table->timestamps();
         });

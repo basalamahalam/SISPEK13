@@ -16,14 +16,6 @@ class MenfessController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
@@ -44,29 +36,5 @@ class MenfessController extends Controller
     {
         $data = Menfess::latest()->get();
         return view("media.menfess", compact("data"));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Menfess $menfess)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Menfess $menfess)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Menfess $menfess)
-    {
-        //
     }
 }

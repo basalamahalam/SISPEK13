@@ -5,7 +5,7 @@
     <div class="container">
         <div class="mx-auto text-center mb-10">
             <h4 class="font-semibold text-lg text-primary mb-2 tracking-[0.3rem]">SISPEK13</h4>
-            <h2 class="font-bold text-white text-2xl mb-4 sm:text-xl lg:text-4xl">Sejarah <span class="font-semibold text-dark">Website</span></h2>
+            <h2 class="font-bold text-white text-2xl mb-4 lg:text-4xl">Sejarah <span class="font-semibold text-dark">Website</span></h2>
         </div>
         <img src="../img/assets/bg-web.png" alt="sispek13" class="w-full rounded-xl mb-10">
         <div class="p-4 bg-slate-800 rounded-lg shadow-lg shadow-dark">

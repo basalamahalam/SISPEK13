@@ -10,8 +10,11 @@ use Illuminate\Support\Facades\Mail;
 class PendaftaranController extends Controller
 {
     public function index()
-    {
-        return view("media.pendaftaran");
+    {   
+        $data = ['X KA 1', 'X KA 2', 'X KA 3', 'X KA 4', 'X KA 5', 'X KA 6' , 'X TKJT 1', 'X TKJT 2', 'X TKJT 3', 'X PPLG 1', 'X PPLG 2'];
+        return view("media.pendaftaran", [
+            'data' => $data
+        ]);
     }
 
     public function store(Request $request){
@@ -23,11 +26,11 @@ class PendaftaranController extends Controller
             "kelas"=> "required",
             "gender"=> "required",
             "contact"=> "required|max:13",
-            "image"=> "required|image|file|max:1024",
+            "image"=> "required|image|file|max:512",
             "knowledge"=> "required",
             "reason"=> "required"
         ]);
-
+        
         $validatedData['image'] = $request->file('image')->store('post-images');
 
         $pendaftar = Pendaftaran::create($validatedData);

@@ -86,3 +86,51 @@ body {
 .control ul li.selected {
     opacity: 0.5;
 }
+
+.card-body {
+    right: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.cards-body {
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.cards:hover .cards-body {
+    bottom: -60%;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        oppacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}

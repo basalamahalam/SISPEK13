@@ -20,26 +20,72 @@
               <div class="flex justify-end items-center">
                   <label for="pendaftar" class="w-1/2 text-base font-bold text-primary"
                   >Pendaftar</label>
+                  @if(old('pendaftar') == 'osis')
                   <label class="text-base font-medium text-white text-right w-1/4">
-                      <input
-                          type="radio"
-                          id="osis"
-                          name="pendaftar"
-                          value="osis"
-                          class="w-5 h-5 mr-2"
-                      />
-                      OSIS
-                  </label>
+                        <input
+                            type="radio"
+                            id="osis"
+                            name="pendaftar"
+                            value="osis"
+                            class="w-5 h-5 mr-2"
+                           checked
+                        />
+                        OSIS
+                      </label>
+                      <label class="text-base font-medium text-white text-right w-1/4">
+                        <input
+                        type="radio"
+                        id="mpk"
+                        name="pendaftar"
+                        value="mpk"
+                        class="w-5 h-5 mr-2"
+                        />
+                        MPK
+                      </label>
+                  @elseif(old('pendaftar') == 'mpk')
                   <label class="text-base font-medium text-white text-right w-1/4">
-                      <input
-                          type="radio"
-                          id="mpk"
-                          name="pendaftar"
-                          value="mpk"
-                          class="w-5 h-5 mr-2"
-                      />
-                      MPK
-                  </label>
+                        <input
+                        type="radio"
+                        id="osis"
+                        name="pendaftar"
+                        value="osis"
+                        class="w-5 h-5 mr-2"
+                        />
+                        OSIS
+                      </label>
+                      <label class="text-base font-medium text-white text-right w-1/4">
+                        <input
+                        type="radio"
+                        id="mpk"
+                        name="pendaftar"
+                        value="mpk"
+                        class="w-5 h-5 mr-2"
+                        checked
+                        />
+                        MPK
+                      </label>
+                  @else
+                  <label class="text-base font-medium text-white text-right w-1/4">
+                        <input
+                        type="radio"
+                        id="osis"
+                        name="pendaftar"
+                        value="osis"
+                        class="w-5 h-5 mr-2"
+                        />
+                        OSIS
+                      </label>
+                      <label class="text-base font-medium text-white text-right w-1/4">
+                        <input
+                        type="radio"
+                        id="mpk"
+                        name="pendaftar"
+                        value="mpk"
+                        class="w-5 h-5 mr-2"
+                        />
+                        MPK
+                      </label>
+                  @endif
                   @error('pendaftar')
                     <div class="text-xs text-red-600">{{ $message }}</div>
                     @enderror
@@ -53,6 +99,7 @@
                 type="text"
                 id="email"
                 name="email"
+                value = "{{ old('email') }}"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus-ring1 focus:border-primary @error('email') border-2 border-red-500 @enderror"
                 required
                 />
@@ -68,6 +115,7 @@
                 type="text"
                 id="nama"
                 name="nama"
+                value = "{{ (old('nama')) }}"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus-ring1 focus:border-primary @error('nama') border-2 border-red-500 @enderror"
                 required
                 />
@@ -83,17 +131,13 @@
                   <span class="rounded-md shadow-sm">
                     <select name="kelas" id="kelas" class="bg-slate-200 rounded-md shadow-sm p-4 py-2 text-left cursor-pointer focus:outline-none focus:ring focus:border-primary sm:text-sm @error('kelas') border-2 border-red-500 @enderror" >
                       <option selected disabled>Pilih Kelas</option>
-                      <option value="X AK 1">X AK 1</option>
-                      <option value="X AK 2">X AK 2</option>
-                      <option value="X AK 3">X AK 3</option>
-                      <option value="X AK 4">X AK 4</option>
-                      <option value="X AK 5">X AK 5</option>
-                      <option value="X AK 6">X AK 6</option>
-                      <option value="X TJKT 1">X TJKT 1</option>
-                      <option value="X TJKT 2">X TJKT 2</option>
-                      <option value="X TJKT 3">X TJKT 3</option>
-                      <option value="X PPLG 1">X PPLG 1</option>
-                      <option value="X PPLG 2">X PPLG 2</option>  
+                      @foreach ($data as $kelas)
+                          @if(old('kelas') == $kelas)
+                          <option value="{{ $kelas}}" selected>{{ $kelas }}</option>
+                          @else
+                          <option value="{{ $kelas}}">{{ $kelas }}</option>
+                          @endif
+                      @endforeach
                     </select>
                     @error('kelas')
                     <div class="text-xs text-red-600">{{ $message }}</div>
@@ -105,14 +149,15 @@
               <div class="flex justify-start items-center">
                   <label for="gender" class="w-1/2 text-base font-bold text-primary"
                   >Jenis Kelamin</label>
+                  @if(old('gender') == 'Laki-Laki')
                   <label class="text-base font-medium text-white text-right w-1/4">
                       <input
                           type="radio"
                           id="laki"
                           name="gender"
-                          value="laki"
+                          value="Laki-Laki"
                           class="w-5 h-5 mr-2"
-                          required
+                          checked
                       />
                       Laki-Laki
                   </label>
@@ -121,12 +166,55 @@
                           type="radio"
                           id="perempuan"
                           name="gender"
-                          value="perempuan"
+                          value="Perempuan"
                           class="w-5 h-5 mr-2"
-                          required
                       />
                   Perempuan
                   </label>
+                  @elseif(old('gender') == 'Perempuan')
+                  <label class="text-base font-medium text-white text-right w-1/4">
+                    <input
+                        type="radio"
+                        id="laki"
+                        name="gender"
+                        value="Laki-Laki"
+                        class="w-5 h-5 mr-2"
+                    />
+                    Laki-Laki
+                </label>
+                <label class="text-base font-medium text-white text-right w-1/4">
+                    <input
+                        type="radio"
+                        id="perempuan"
+                        name="gender"
+                        value="Perempuan"
+                        class="w-5 h-5 mr-2"
+                        checked
+                    />
+                Perempuan
+                </label>
+                  @else
+                  <label class="text-base font-medium text-white text-right w-1/4">
+                    <input
+                        type="radio"
+                        id="laki"
+                        name="gender"
+                        value="Laki-Laki"
+                        class="w-5 h-5 mr-2"
+                    />
+                    Laki-Laki
+                </label>
+                <label class="text-base font-medium text-white text-right w-1/4">
+                    <input
+                        type="radio"
+                        id="perempuan"
+                        name="gender"
+                        value="Perempuan"
+                        class="w-5 h-5 mr-2"
+                    />
+                Perempuan
+                </label>
+                  @endif
                   @error('gender')
                     <div class="text-xs text-red-600">{{ $message }}</div>
                     @enderror
@@ -139,6 +227,7 @@
                 type="text"
                 id="contact"
                 name="contact"
+                value= "{{ old('contact') }}"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus-ring1 focus:border-primary @error('contact') border-2 border-red-500 @enderror"
                 required
                 />
@@ -147,10 +236,13 @@
                 @enderror
             </div>
             <div class="flex justify-between items-start mb-8">
-              <label for="image" class="text-primary text-base font-bold mb-2">Foto</label>
+              <label for="image" class="text-primary text-base font-bold mb-2">Foto 3x4</label>
               <div>
-                  <input class="text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file" name="image" required>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300 text-right" id="file_input_help">PNG, JPG (MAX. 300x400px).</p> 
+                <h1 class="sr-only">Choose file</h1>
+                <input class="block w-full border cursor-pointer bg-gray-300 border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 disabled:opacity-50 disabled:pointer-events-none
+                file:bg-gray-400 file:border-0 file:me-4
+                file:py-3 file:px-4" onchange="previewImage()" aria-describedby="file_input_help" id="file_input" type="file" name="image" required>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300 text-right" id="file_input_help">PNG, JPG (MAX. 512kb).</p> 
                   @error('image')
                     <div class="text-xs text-red-600 text-right">{{ $message }}</div>
                   @enderror
@@ -165,7 +257,7 @@
                 name="knowledge"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus-ring1 focus:border-primary h-32 @error('knowledge') border-2 border-red-500 @enderror"
                 required
-                ></textarea>
+                >{{ old('knowledge') }}</textarea>
                 @error('knowledge')
                 <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
@@ -180,8 +272,8 @@
                 name="reason"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus-ring1 focus:border-primary h-32 @error('reason') border-2 border-red-500 @enderror"
                 required
-                ></textarea>
-                @error('knowledge')
+                >{{ old('reason') }}</textarea>
+                @error('reason')
                 <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
             </div>
@@ -194,13 +286,10 @@
                 <label class="text-sm font-small text-white text-right w-1/4">
                   <input
                       type="radio"
-                      id="osis"
-                      name="pendaftar"
-                      value="osis"
                       class="w-3 h-3 mr-2"
                       required/>
                   Ya, saya setuju
-              </label>
+                </label>
             </div>
               <button type="submit" name="submit" 
                 class="text-base bg-primary font-bold text-white py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">

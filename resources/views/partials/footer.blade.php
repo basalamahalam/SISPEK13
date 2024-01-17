@@ -2,37 +2,37 @@
     <div class="container">
         <div class="flex">
             <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-                <h2 class="font-bold text-4xl text-white mb-5">SISPEK13</h2>
-                <p class="text-sm font-medium">Dibuat pada tahun 2023 oleh apa aja deh isi yang banyak dah</p>
+                <h2 class="font-medium text-xl lg:font-bold lg:text-4xl text-white mb-5">SISPEK13</h2>
+                <p class="font-thin text-xs text-justify lg:text-sm lg:font-medium">Website Resmi dari OSIS - MPK & Ekstrakurikuler SMKN 13 Bandung yang dibuat dengan penuh titik koma.</p>
             </div>
             <div class="w-full px-4 mb-12 md:w-1/3 left-50">
-                <h3 class="font-semibold text-xl text-white mb-5">Konten</h3>
+                <h3 class="text-base font-medium lg:font-semibold lg:text-xl text-white mb-5">Konten</h3>
                 <ul class="text-slate-300">
                     <li>
-                        <a href="" class="inline-block text-base hover:text-primary mb-3">Menfess</a>
+                        <a href="" class="inline-block text-xs lg:text-base hover:text-primary mb-3">Menfess</a>
                     </li>
                     <li>
-                        <a href="" class="inline-block text-base hover:text-primary mb-3">Jurnal OSIS</a>
+                        <a href="" class="inline-block text-xs lg:text-base hover:text-primary mb-3">Jurnal OSIS</a>
                     </li>
                     <li>
-                        <a href="" class="inline-block text-base hover:text-primary mb-3">Berita</a>
+                        <a href="" class="inline-block text-xs lg:text-base hover:text-primary mb-3">Berita</a>
                     </li>
                 </ul>
             </div>
             <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                <h3 class="lg:font-semibold lg:text-xl text-white mb-5">Tautan</h3>
                 <ul class="text-slate-300">
                     <li>
-                        <a href="#home" class="inline-block text-base hover:text-primary mb-3">OSIS</a>
+                        <a href="#home" class="inline-block text-xs lg:text-base hover:text-primary mb-3">OSIS</a>
                     </li>
                     <li>
-                        <a href="#about" class="inline-block text-base hover:text-primary mb-3">MPK</a>
+                        <a href="#about" class="inline-block text-xs lg:text-base hover:text-primary mb-3">MPK</a>
                     </li>
                     <li>
-                        <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">EKSTRAKURIKULER</a>
+                        <a href="#portofolio" class="inline-block text-xs lg:text-base hover:text-primary mb-3">EKSTRAKURIKULER</a>
                     </li>
                     <li>
-                        <a href="#client" class="inline-block text-base hover:text-primary mb-3">SMKN13BDG</a>
+                        <a href="#client" class="inline-block text-xs lg:text-base hover:text-primary mb-3">SMKN13BDG</a>
                     </li>
                 </ul>
                 </div>
@@ -51,7 +51,7 @@
                 {{-- github --}}
                 <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border text-slate-300 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
             </div>
-            <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="" target="_blank" class="font-bold text-sky-500">Sixth Project</a> untuk Website <a href="" target="_blank" class="font-bold text-sky-600">SISPEK13</a></p>
+            <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="https://instagram.com/_bslmhalam" target="_blank" class="font-bold text-sky-500">Sixth Project</a> untuk Website <span class="font-bold text-sky-600">SISPEK13</span></p>
         </div>
     </div>
   </footer>

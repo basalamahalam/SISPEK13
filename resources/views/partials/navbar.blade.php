@@ -3,10 +3,10 @@
         <div class="flex item-center justify-between relative">
             <div class="px-4">
                 <a href="/" class="font-bold text-lg text-primary flex justify-between py-6">
-                    <img src="../img/logo/logo13.png" alt="logo13" width="45px">
+                    <img src="../img/logo/logo13.png" alt="logo13" class="w-[45px]">
                     <div class="block ml-3">
-                        <p class="font-bold text-lg text-white">SISPEK13</p>
-                        <p class="font-medium text-xs text-white">OSIS - MPK & EKSKUL 13</p>
+                        <p class="font-semibold lg:font-bold text-lg text-white">SISPEK13</p>
+                        <p class="font-thin lg:font-medium text-xs text-white">OSIS - MPK & EKSKUL 13</p>
                     </div>
                 </a>
             </div>

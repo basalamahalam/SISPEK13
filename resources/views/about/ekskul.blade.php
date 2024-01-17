@@ -10,7 +10,7 @@
         <div class="mb-10">
             <form action="/ekskul" class="w-full flex items-center justify-center">
                 <input
-                    class="w-1/2 py-2 pl-3 rounded-l-lg border-2 border-sky-700 focus:outline-none "
+                    class="w-[80%] lg:w-1/2 py-2 pl-3 rounded-l-lg border-2 border-sky-700 focus:outline-none "
                     type="text"
                     placeholder="search"
                     name="search"
@@ -24,7 +24,7 @@
             @foreach ($data as $post)
             <div class="w-full p-4 lg:w-1/2 xl:w-1/3">
                 <div class="py-4 bg-slate-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="../img/logo/OSIS.png" alt="programming" class="w-[150px] mx-auto ">
+                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->iamge }}" class="w-[150px] mx-auto ">
                     <div class="p-4 flex flex-col justify-center items-center">
                         <h3 class="block mb-3 font-semibold text-xl text-white truncate">{{ $post->name }}</h3>
                         <a href="/ekskul/{{ $post->slug }}" class="font-small text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>

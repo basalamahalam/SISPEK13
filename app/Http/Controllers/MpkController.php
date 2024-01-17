@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mpk;
+use App\Models\Organization;
+use App\Models\Division;
+use App\Models\Anggota;
 use Illuminate\Http\Request;
 
 class MpkController extends Controller
@@ -12,54 +14,27 @@ class MpkController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $mpk = Organization::where('nama_organisasi', 'mpk')->first();
+        $divisi = Division::where('organization_id', '2')->get();
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        return view("about.osis-mpk", [
+            'title'=> 'MPK 2023-2024',
+            'subtitle'=> 'TENTANG KAMI',
+            'organisasi' => 'MPK',
+            'org' => $mpk,
+            'divisi' => $divisi
+        ]);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Mpk $mpk)
+    public function show(Division $divisi)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Mpk $mpk)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Mpk $mpk)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Mpk $mpk)
-    {
-        //
+        $anggota = Anggota::where('division_id', $divisi->id)->get();
+        return view('about.detail.osismpk-detail', [
+            'name' => 'MPK',
+            'data' => $anggota
+        ]);
     }
 }

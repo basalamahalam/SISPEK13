@@ -10,7 +10,7 @@
         <div class="mb-10">
             <form action="/{{ $name }}" class="w-full flex items-center justify-center">
                 <input
-                    class="w-1/2 py-2 pl-3 rounded-l-lg border-2 border-sky-700 focus:outline-none "
+                    class="w-[80%] lg:w-1/2 py-2 pl-3 rounded-l-lg border-2 border-sky-700 focus:outline-none "
                     type="text"
                     placeholder="search"
                     name="search"
@@ -25,7 +25,7 @@
                 @foreach($data as $post)
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full">
+                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->image }}" class="h-[220px]">
                         <div class="py-8 px-6">
                             <h3 class="block  font-semibold text-xl text-white truncate">{{ $post->title }}</h3>
                             <p class="font-small text-sm text-slate-400 mb-3">
@@ -33,7 +33,7 @@
                                     By {{ $post->author }} {{ $post->created_at->diffForHumans() }}
                                 </small>
                             </p>
-                            <p class="font-medium text-base text-slate-300 mb-6 trubcate">{{ $post->excerpt }}</p>
+                            <p class="font-medium text-base text-slate-300 mb-6 truncate">{{ $post->excerpt }}</p>
                             <a href="/{{ $name }}/{{ $post->slug }}" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
