@@ -6,9 +6,10 @@
   @vite('resources/css/app.css')
 </head>
 <body>
-    @include('partials.navbar')
-        @yield('container')
-    @include('partials.footer')
+  @include('partials.navbar')
+  @yield('container')
+  @include('partials.footer')
+  <div class="loader"></div>
 </body>
 <script src="../js/script.js"></script>
 </html>

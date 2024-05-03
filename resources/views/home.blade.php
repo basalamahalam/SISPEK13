@@ -102,7 +102,7 @@
                 <h4 class="font-medium text-xs lg:font-semibold lg:text-lg text-primary mb-2 tracking-[0.2rem] lg:tracking-[0.3rem]">SECRET MESSAGES</h4>
                 <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl tracking-widest">MENFESS.</h2>
                 <p class="text-sm font-thin lg:font-medium lg:text-base text-slate-400 mb-10">Mengirim Pesan Anonim untuk kalian yang pemalu xixixi, Ayo Kirim Menfess Sekarang!!!</p>
-                <a href="/menfess" class="text-[11px] font-small lg:text-sm lg:font-semibold text-white bg-primary py-2 px-4 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
+                <a href="/menfess" class="text-[11px] font-small lg:text-sm lg:font-semibold text-white bg-primary py-2 px-4 lg:py-3 lg:px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
             </div>
         </div>
     </div>
