@@ -13,9 +13,9 @@
             </button>
         </div>
     @endif
-    <div class="container animate-fade-up">
-        <div class="flex flex-wrap-reverse justify-center lg:justify-between lg:items-center">
-            <div class="w-full mt-10 text-center lg:w-1/2 lg:mt-0 lg:text-left">
+    <div class="px-4 md:px-12 2xl:px-48 animate-fade-up">
+        <div class="flex flex-wrap-reverse justify-center md:justify-between md:items-center">
+            <div class="w-full mt-10 text-center md:w-1/2 md:mt-0 md:text-left">
                 <h1 class="text-base font-semibold text-primary lg:text-xl 2xl:text-2xl">Selamat Datang di Website
                     <span class="block my-3 text-3xl font-bold text-white lg:text-5xl xl:text-6xl">SISPEK13!</span></h1>
                 <h2 class="my-2 text-lg font-medium lg:my-3 text-slate-500 lg:text-2xl xl:text-3xl">OSIS - MPK & EKSTRAKURIKULER
@@ -24,8 +24,8 @@
             
                 <a href="/web" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
             </div>
-            <div class="hidden w-5/6 self-center overflow-hidden lg:w-[40%] lg:block lg:rounded-lg lg:shadow-2xl lg:shadow-slate-600">
-                <div class="relative flex wrapper lg:right-0">
+            <div class="hidden w-5/6 self-center overflow-hidden md:w-[40%] md:block md:rounded-lg md:shadow-2xl md:shadow-slate-600">
+                <div class="relative flex wrapper md:right-0">
                     <img src="img/logo/bg.png" alt="MPK" class="max-w-full mx-auto object-fit"> 
                     <img src="img/logo/osis-bg.jpg" alt="OSIS" class="max-w-full mx-auto object-fit"/>
                     <img src="img/logo/mpk-bg.jpg" alt="MPK" class="max-w-full mx-auto object-fit">
@@ -37,45 +37,45 @@
   </section>
   <section id="organization" class="pb-32 pt-36 bg-slate-700">
     <div class="container">
-        <div class="mx-auto mb-8 text-center lg:mb-10">
+        <div class="mx-auto mb-8 text-center md:mb-10">
             <h4 class="font-semibold text-base text-primary mb-2 tracking-[0.3rem]">TENTANG KAMI</h4>
-            <h2 class="mb-4 text-xl font-bold text-white sm:text-xl lg:text-4xl">Struktur Kepengurusan</h2>
+            <h2 class="mb-4 text-2xl font-bold text-white md:text-4xl">Profil Organisasi</h2>
         </div>
-        <div class="w-full mx-auto lg:w-3/4">
+        <div class="w-full mx-auto md:w-3/4">
             <div class="relative overflow-hidden">
                 <div class="slider flex items-center w-[300%] transition-all duration-500">
-                    <div class="items-center justify-center block lg:flex basis-full">
-                        <div class="w-[25%] lg:max-w-[150px] px-4 mx-auto lg:mx-0">
+                    <div class="items-center justify-center block md:flex basis-full">
+                        <div class="w-[25%] md:max-w-[150px] px-4 mx-auto md:mx-0">
                             <img src="img/logo/logo.png" alt="logo OSIS">
                         </div>
-                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
-                            <h4 class="mb-2 text-sm text-yellow-500 font-small lg:font-bold lg:text-lg">OSIS 2023-2024</h4>
-                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Organisasi Siswa Intra Sekolah</h2>
-                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base">Badan organisasi yang dijalankan oleh siswa di sekolah dengan tujuan untuk mengoordinasikan dan mempromosikan kegiatan siswa.</p>
-                            <a href="/osis" class="px-6 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full lg:px-8 lg:py-3 lg:mt-0 bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
+                        <div class="w-full px-4 my-4 text-center md:my-10 md:w-3/4 md:text-left">
+                            <h4 class="mb-2 text-sm text-yellow-500 font-small md:font-bold md:text-lg">OSIS 2023-2024</h4>
+                            <h2 class="mb-4 text-base font-medium text-white md:font-bold md:text-2xl">Organisasi Siswa Intra Sekolah</h2>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 md:text-justify md:font-medium md:text-base">Badan organisasi yang dijalankan oleh siswa di sekolah dengan tujuan untuk mengoordinasikan dan mempromosikan kegiatan siswa.</p>
+                            <a href="/osis" class="px-6 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full md:px-8 md:py-3 md:mt-0 bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="items-center justify-center block lg:flex basis-full">
-                        <div class="w-[30%] lg:max-w-[150px] px-4 mx-auto lg:mx-0">
+                    <div class="items-center justify-center block md:flex basis-full">
+                        <div class="w-[30%] md:max-w-full lg:max-w-[150px] px-4 mx-auto md:mx-0">
                             <img src="img/logo/logo-mpk.png" alt="logo OSIS">
                         </div>
-                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
-                            <h4 class="mb-2 text-sm text-blue-400 font-small lg:font-bold lg:text-lg">MPK 2023-2024</h4>
-                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Majelis Perwakilan Kelas</h2>
-                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base ">Badan organisasi yang berada didalam sekolah dengan tugas sebagai evaluator, aspirator dan legislator.</p>
+                        <div class="w-full px-4 my-4 text-center md:my-10 md:w-3/4 md:text-left">
+                            <h4 class="mb-2 text-sm text-blue-400 font-small md:font-bold md:text-lg">MPK 2023-2024</h4>
+                            <h2 class="mb-4 text-base font-medium text-white md:font-bold md:text-2xl">Majelis Perwakilan Kelas</h2>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 md:text-justify md:font-medium md:text-base ">Badan organisasi yang berada didalam sekolah dengan tugas sebagai evaluator, aspirator dan legislator.</p>
                             <a href="/mpk" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="items-center justify-center block lg:flex basis-full">
-                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
-                            <h4 class="mb-2 text-sm text-green-500 font-small lg:font-bold lg:text-lg">EKSKUL</h4>
-                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Ekstrakurikuler SMKN 13 Bandung</h2>
-                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base ">Kegiatan non-akademik yang bertujuan untuk mengembangkan minat dan bakat siswa SMKN 13 Bandung diluar keahlian mereka.</p>
+                    <div class="items-center justify-center block md:flex basis-full">
+                        <div class="w-full px-4 my-4 text-center md:my-10 md:w-3/4 md:text-left">
+                            <h4 class="mb-2 text-sm text-green-500 font-small md:font-bold md:text-lg">EKSKUL</h4>
+                            <h2 class="mb-4 text-base font-medium text-white md:font-bold md:text-2xl">Ekstrakurikuler SMKN 13 Bandung</h2>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 md:text-justify md:font-medium md:text-base ">Kegiatan non-akademik yang bertujuan untuk mengembangkan minat dan bakat siswa SMKN 13 Bandung diluar keahlian mereka.</p>
                             <a href="/ekskul" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-                <div class="mt-10 control md:mt-0">
+                <div class="mt-10 control lg:mt-0">
                     <button class="absolute left-0 prev-button top-1/2"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#94a3b8" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
                       </svg></button>
@@ -93,17 +93,17 @@
     </div>
 </section>
   <section id="menfess" class="pb-32 pt-36 bg-slate-600">
-    <div class="container items-center justify-center block mx-auto lg:flex">
-        <div class="w-2/3 px-4 mx-auto mb-10 lg:mb-0 lg:mr-20">
+    <div class="container items-center justify-center block mx-auto md:flex">
+        <div class="w-2/3 px-4 mx-auto mb-10 md:mb-0 md:mr-10 lg:mr-20">
             <object data="img/assets/menfess.svg" type="image/svg+xml" id="animated-svg"></object>                 
         </div>
-        <div class="w-full px-4">
+        <div class="w-full px-5 lg:px-4">
             <div class="max-w-full text-start">
-                <h4 class="font-medium text-xs lg:font-semibold text-center lg:text-left lg:text-lg 2xl:text-xl text-primary mb-2 tracking-[0.2rem] lg:tracking-[0.3rem]">SECRET MESSAGES</h4>
-                <h2 class="mb-4 text-3xl font-bold tracking-widest text-center text-white lg:text-left sm:text-4xl lg:text-5xl 2xl:text-6xl">MENFESS.</h2>
-                <p class="mb-10 text-sm font-thin text-center lg:font-medium lg:text-base lg:text-left 2xl:text-xl text-slate-400">Mengirim Pesan Anonim untuk kalian yang pemalu xixixi, Ayo Kirim Menfess Sekarang!!!</p>
-                <div class="text-center lg:text-left">
-                    <a href="/menfess" class="text-[11px] font-small lg:text-sm lg:font-semibold text-white bg-primary py-2 px-4 lg:py-3 lg:px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
+                <h4 class="font-medium text-xs md:font-semibold text-center md:text-left md:text-lg 2xl:text-xl text-primary mb-2 tracking-[0.2rem] md:tracking-[0.3rem]">SECRET MESSAGES</h4>
+                <h2 class="mb-4 text-3xl font-bold tracking-widest text-center text-white md:text-left sm:text-4xl md:text-5xl 2xl:text-6xl">MENFESS.</h2>
+                <p class="mb-10 text-sm font-thin text-center md:font-medium md:text-base md:text-left 2xl:text-xl text-slate-400">Mengirim Pesan Anonim untuk kalian yang pemalu xixixi, Ayo Kirim Menfess Sekarang!!!</p>
+                <div class="text-center md:text-left">
+                    <a href="/menfess" class="text-[11px] font-small md:text-sm md:font-semibold text-white bg-primary py-2 px-4 md:py-3 md:px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
                 </div>
             </div>
         </div>
@@ -118,17 +118,17 @@
                 <p class="font-medium text-md text-slate-500 md:text-lg 2xl:text-xl">Baca Yuk! Artikel Edukatif dari Siswa-Siswi SMKN 13 Bandung.</p>
             </div>
         </div>
-        <div class="flex flex-wrap justify-center mb-5">
+        <div class="grid grid-cols-1 gap-4 mb-5 md:grid-cols-2 lg:grid-cols-3">
             @for($i = 0; $i < min($jurnal->count(), 3); $i++)
-                <div class="w-full px-2 lg:px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-2 md:px-4">
                     <div class="mb-10 overflow-hidden shadow-lg bg-slate-700 rounded-xl">
                         <div class="relative h-64">
                             <img src="{{ asset('storage/' . $jurnal[$i]->image) }}" alt="{{ $jurnal[$i]->image }}" class="absolute top-0 left-0 object-cover w-full h-full">
                         </div>
-                        <div class="px-6 py-8">
-                            <h3><a href="/jurnal/{{ $jurnal[$i]->slug }}" class="block mb-3 text-xl font-semibold text-center text-white truncate hover:text-primary lg:text-left">{{ $jurnal[$i]->title }}</a></h3>
-                            <article class="mb-6 text-base font-medium text-center lg:text-left text-slate-500">{!! Str::limit($jurnal[$i]->body, $limit = 50, $end = '...') !!}</article>
-                            <div class="text-center lg:text-left">
+                        <div class="px-5 py-8 md:px-6">
+                            <h3><a href="/jurnal/{{ $jurnal[$i]->slug }}" class="block mb-3 text-2xl font-semibold text-center text-white truncate md:text-xl hover:text-primary md:text-left">{{ $jurnal[$i]->title }}</a></h3>
+                            <article class="mb-6 text-base font-medium text-center md:text-left text-slate-500">{!! Str::limit($jurnal[$i]->body, $limit = 50, $end = '...') !!}</article>
+                            <div class="text-center md:text-left">
                                 <a href="/jurnal/{{ $jurnal[$i]->slug }}" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                 <p class="font-medium text-md text-slate-400 md:text-lg 2xl:text-xl">Platform berita yang menyajikan informasi terkini seputar kegiatan di SMKN 13 Bandung.</p>
             </div>
         </div>
-        <div class="flex flex-wrap justify-center w-full lg:px-4 xl:w-10/12 xl:mx-auto">
+        <div class="flex flex-wrap justify-center w-full md:px-4 md:w-10/12 md:mx-auto">
             @for($i=0; $i < min($berita->count(), 4); $i++)
                 <div class="w-full p-2 lg:p-4 mb-7 lg:mb-12 lg:w-1/2">
                     <a href="/berita/{{ $berita[$i]->slug }}">

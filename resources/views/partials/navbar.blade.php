@@ -1,5 +1,5 @@
 <header class="absolute top-0 left-0 z-10 w-full bg-transparent">
-        <div class="flex items-center justify-between w-full px-2 py-5 xl:px-12 2xl:px-48">
+        <div class="flex items-center justify-between w-full px-2 py-5 md:px-8 lg:px-12 2xl:px-48">
             <div class="px-4">
                 <a href="/" class="flex justify-between text-lg font-bold text-primary">
                     <img src="../img/logo/logo13.png" alt="logo13" class="w-[45px]">
@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="flex items-center px-4">
-                <button id="hamburger" name="hamburger" type="button" class="absolute block right-5 lg:hidden">
+                <button id="hamburger" name="hamburger" type="button" class="absolute block right-5 md:right-14 lg:hidden">
                     <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
                     <span class="transition duration-300 ease-in-out hamburger-line"></span>
                     <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
