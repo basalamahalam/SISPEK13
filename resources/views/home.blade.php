@@ -17,10 +17,10 @@
         <div class="flex flex-wrap-reverse justify-center lg:justify-between lg:items-center">
             <div class="w-full mt-10 text-center lg:w-1/2 lg:mt-0 lg:text-left">
                 <h1 class="text-base font-semibold text-primary lg:text-xl 2xl:text-2xl">Selamat Datang di Website
-                    <span class="block my-3 text-4xl font-bold text-white lg:text-5xl xl:text-6xl">SISPEK13!</span></h1>
-                <h2 class="my-3 text-lg font-medium text-slate-500 lg:text-2xl xl:text-3xl">OSIS - MPK & EKSTRAKURIKULER
+                    <span class="block my-3 text-3xl font-bold text-white lg:text-5xl xl:text-6xl">SISPEK13!</span></h1>
+                <h2 class="my-2 text-lg font-medium lg:my-3 text-slate-500 lg:text-2xl xl:text-3xl">OSIS - MPK & EKSTRAKURIKULER
                     <span class="font-bold text-white">13</span></h2>
-                <p class="mb-10 font-medium leading-relaxed text-slate-400 xl:text-xl">Halaman Website Resmi <span class="font-bold text-white xl:text-xl">SISPEK SMKN 13 Bandung. </span><span class="text-pink-500">❤</span></p>
+                <p class="mb-10 text-sm font-medium leading-relaxed text-slate-400 xl:text-xl">Halaman Website Resmi <span class="text-sm font-bold text-white xl:text-xl">SISPEK SMKN 13 Bandung. </span><span class="text-pink-500">❤</span></p>
             
                 <a href="/web" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
             </div>
@@ -37,40 +37,40 @@
   </section>
   <section id="organization" class="pb-32 pt-36 bg-slate-700">
     <div class="container">
-        <div class="mx-auto mb-5 text-center lg:mb-10">
-            <h4 class="font-semibold text-lg text-primary mb-2 tracking-[0.3rem]">TENTANG KAMI</h4>
-            <h2 class="mb-4 text-2xl font-bold text-white sm:text-xl lg:text-4xl">Struktur Kepengurusan</h2>
+        <div class="mx-auto mb-8 text-center lg:mb-10">
+            <h4 class="font-semibold text-base text-primary mb-2 tracking-[0.3rem]">TENTANG KAMI</h4>
+            <h2 class="mb-4 text-xl font-bold text-white sm:text-xl lg:text-4xl">Struktur Kepengurusan</h2>
         </div>
         <div class="w-full mx-auto lg:w-3/4">
             <div class="relative overflow-hidden">
-                <div class="slider flex w-[300%] transition-all duration-500">
-                    <div class="flex items-center justify-center basis-full">
-                        <div class="w-[80%] lg:w-3/4 px-4 my-10">
-                            <h4 class="mb-2 text-sm text-yellow-500 font-small lg:font-bold lg:text-lg">OSIS 2023-2024</h4>
-                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Organisasi Siswa Intra Sekolah</h2>
-                            <p class="mb-10 text-sm font-thin text-justify text-slate-300 lg:font-medium lg:text-base ">Badan organisasi yang dijalankan oleh siswa di sekolah dengan tujuan untuk mengoordinasikan kegiatan siswa, dan mempromosikan keterlibatan siswa.</p>
-                            <a href="/osis" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
-                        </div>
-                        <div class="hidden lg:block max-w-[150px] px-4">
+                <div class="slider flex items-center w-[300%] transition-all duration-500">
+                    <div class="items-center justify-center block lg:flex basis-full">
+                        <div class="w-[25%] lg:max-w-[150px] px-4 mx-auto lg:mx-0">
                             <img src="img/logo/logo.png" alt="logo OSIS">
                         </div>
-                    </div>
-                    <div class="flex items-center justify-center basis-full">
-                        <div class="w-[80%] lg:w-2/3 px-4 my-10">
-                            <h4 class="mb-2 text-sm text-blue-400 font-small lg:font-bold lg:text-lg">MPK 2023-2024</h4>
-                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Majelis Perwakilan Kelas</h2>
-                            <p class="mb-10 text-sm font-thin text-justify text-slate-300 lg:font-medium lg:text-base ">Badan organisasi yang berada didalam sekolah dengan tugas sebagai evaluator, aspirator dan legislator.</p>
-                            <a href="/mpk" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
+                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
+                            <h4 class="mb-2 text-sm text-yellow-500 font-small lg:font-bold lg:text-lg">OSIS 2023-2024</h4>
+                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Organisasi Siswa Intra Sekolah</h2>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base">Badan organisasi yang dijalankan oleh siswa di sekolah dengan tujuan untuk mengoordinasikan dan mempromosikan kegiatan siswa.</p>
+                            <a href="/osis" class="px-6 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full lg:px-8 lg:py-3 lg:mt-0 bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
                         </div>
-                        <div class="hidden lg:block max-w-[150px] px-4">
+                    </div>
+                    <div class="items-center justify-center block lg:flex basis-full">
+                        <div class="w-[30%] lg:max-w-[150px] px-4 mx-auto lg:mx-0">
                             <img src="img/logo/logo-mpk.png" alt="logo OSIS">
                         </div>
+                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
+                            <h4 class="mb-2 text-sm text-blue-400 font-small lg:font-bold lg:text-lg">MPK 2023-2024</h4>
+                            <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Majelis Perwakilan Kelas</h2>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base ">Badan organisasi yang berada didalam sekolah dengan tugas sebagai evaluator, aspirator dan legislator.</p>
+                            <a href="/mpk" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center basis-full">
-                        <div class="w-[80%] lg:w-2/3 px-4 my-10">
+                    <div class="items-center justify-center block lg:flex basis-full">
+                        <div class="w-full px-4 my-4 text-center lg:my-10 lg:w-3/4 lg:text-left">
                             <h4 class="mb-2 text-sm text-green-500 font-small lg:font-bold lg:text-lg">EKSKUL</h4>
                             <h2 class="mb-4 text-base font-medium text-white lg:font-bold lg:text-2xl">Ekstrakurikuler SMKN 13 Bandung</h2>
-                            <p class="mb-10 text-sm font-thin text-justify text-slate-300 lg:font-medium lg:text-base ">Kegiatan non-akademik yang bertujuan untuk mengembangkan minat dan bakat siswa SMKN 13 Bandung diluar keahlian mereka.</p>
+                            <p class="mb-10 text-sm font-thin text-center text-slate-300 lg:text-justify lg:font-medium lg:text-base ">Kegiatan non-akademik yang bertujuan untuk mengembangkan minat dan bakat siswa SMKN 13 Bandung diluar keahlian mereka.</p>
                             <a href="/ekskul" class="px-8 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-50">Selengkapnya</a>
                         </div>
                     </div>
@@ -93,16 +93,18 @@
     </div>
 </section>
   <section id="menfess" class="pb-32 pt-36 bg-slate-600">
-    <div class="container items-center justify-center block lg:flex">
+    <div class="container items-center justify-center block mx-auto lg:flex">
         <div class="w-2/3 px-4 mx-auto mb-10 lg:mb-0 lg:mr-20">
             <object data="img/assets/menfess.svg" type="image/svg+xml" id="animated-svg"></object>                 
         </div>
         <div class="w-full px-4">
             <div class="max-w-full text-start">
-                <h4 class="font-medium text-xs lg:font-semibold lg:text-lg 2xl:text-xl text-primary mb-2 tracking-[0.2rem] lg:tracking-[0.3rem]">SECRET MESSAGES</h4>
-                <h2 class="mb-4 text-3xl font-bold tracking-widest text-white sm:text-4xl lg:text-5xl 2xl:text-6xl">MENFESS.</h2>
-                <p class="mb-10 text-sm font-thin lg:font-medium lg:text-base 2xl:text-xl text-slate-400">Mengirim Pesan Anonim untuk kalian yang pemalu xixixi, Ayo Kirim Menfess Sekarang!!!</p>
-                <a href="/menfess" class="text-[11px] font-small lg:text-sm lg:font-semibold text-white bg-primary py-2 px-4 lg:py-3 lg:px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
+                <h4 class="font-medium text-xs lg:font-semibold text-center lg:text-left lg:text-lg 2xl:text-xl text-primary mb-2 tracking-[0.2rem] lg:tracking-[0.3rem]">SECRET MESSAGES</h4>
+                <h2 class="mb-4 text-3xl font-bold tracking-widest text-center text-white lg:text-left sm:text-4xl lg:text-5xl 2xl:text-6xl">MENFESS.</h2>
+                <p class="mb-10 text-sm font-thin text-center lg:font-medium lg:text-base lg:text-left 2xl:text-xl text-slate-400">Mengirim Pesan Anonim untuk kalian yang pemalu xixixi, Ayo Kirim Menfess Sekarang!!!</p>
+                <div class="text-center lg:text-left">
+                    <a href="/menfess" class="text-[11px] font-small lg:text-sm lg:font-semibold text-white bg-primary py-2 px-4 lg:py-3 lg:px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">Baca atau Kirim Menfess</a>
+                </div>
             </div>
         </div>
     </div>
@@ -118,15 +120,17 @@
         </div>
         <div class="flex flex-wrap justify-center mb-5">
             @for($i = 0; $i < min($jurnal->count(), 3); $i++)
-                <div class="w-[90%] px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-2 lg:px-4 lg:w-1/2 xl:w-1/3">
                     <div class="mb-10 overflow-hidden shadow-lg bg-slate-700 rounded-xl">
                         <div class="relative h-64">
                             <img src="{{ asset('storage/' . $jurnal[$i]->image) }}" alt="{{ $jurnal[$i]->image }}" class="absolute top-0 left-0 object-cover w-full h-full">
                         </div>
                         <div class="px-6 py-8">
-                            <h3><a href="/jurnal/{{ $jurnal[$i]->slug }}" class="block mb-3 text-xl font-semibold text-white truncate hover:text-primary">{{ $jurnal[$i]->title }}</a></h3>
-                            <article class="mb-6 text-base font-medium text-slate-500">{!! Str::limit($jurnal[$i]->body, $limit = 50, $end = '...') !!}</article>
-                            <a href="/jurnal/{{ $jurnal[$i]->slug }}" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca Selengkapnya</a>
+                            <h3><a href="/jurnal/{{ $jurnal[$i]->slug }}" class="block mb-3 text-xl font-semibold text-center text-white truncate hover:text-primary lg:text-left">{{ $jurnal[$i]->title }}</a></h3>
+                            <article class="mb-6 text-base font-medium text-center lg:text-left text-slate-500">{!! Str::limit($jurnal[$i]->body, $limit = 50, $end = '...') !!}</article>
+                            <div class="text-center lg:text-left">
+                                <a href="/jurnal/{{ $jurnal[$i]->slug }}" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,9 +150,9 @@
                 <p class="font-medium text-md text-slate-400 md:text-lg 2xl:text-xl">Platform berita yang menyajikan informasi terkini seputar kegiatan di SMKN 13 Bandung.</p>
             </div>
         </div>
-        <div class="flex flex-wrap justify-center w-full px-4 xl:w-10/12 xl:mx-auto">
+        <div class="flex flex-wrap justify-center w-full lg:px-4 xl:w-10/12 xl:mx-auto">
             @for($i=0; $i < min($berita->count(), 4); $i++)
-                <div class="w-full p-4 mb-7 lg:mb-12 lg:w-1/2">
+                <div class="w-full p-2 lg:p-4 mb-7 lg:mb-12 lg:w-1/2">
                     <a href="/berita/{{ $berita[$i]->slug }}">
                         <div class="rounded-md shadow-md">
                             <img src="{{ asset('storage/' . $berita[$i]->image) }}" alt="{{ $berita[$i]->image }}" class="max-h-[270px]">
@@ -164,12 +168,12 @@
         </div>
     </div>
   </section>
-  <section id="developer" class="pb-32 pt-36 bg-slate-600">
+  <section id="developer" class="pb-32 pt-36 bg-slate-800">
     <div class="container">
         <div class="w-full px-4">
             <div class="mx-auto mb-16 text-center">
                 <h4 class="mb-2 text-lg font-semibold 2xl:text-xl text-primary">Developer</h4>
-                <h2 class="mb-4 text-3xl font-bold text-white 2xl:text-6xl sm:text-4xl lg:text-5xl">Pihak yang Terkait</h2>
+                <h2 class="mb-4 text-2xl font-bold text-white 2xl:text-6xl sm:text-4xl lg:text-5xl">Pihak yang Terkait</h2>
                 <p class="font-medium text-md text-slate-400 md:text-lg 2xl:text-xl">Beberapa pihak yang terkait dalam pengembangan Website ini.</p>
             </div>
         </div>
@@ -191,12 +195,12 @@
             </div>
         </div>
     </div>
-    {{-- <a
+    <a
       href="#home"
       class="h-14 w-14 bg-primary flex justify-center items-center rounded-full fixed z-index[9999] bottom-4 right-4 p-4 hover:animate-pulse"
       id="to-top"
     >
       <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2"></span>
-    </a> --}}
+    </a>
   </section>
 @endsection
