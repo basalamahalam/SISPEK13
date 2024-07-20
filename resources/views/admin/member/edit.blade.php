@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <label for="gambar_anggota" class="text-sky-800 text-lg font-semibold block">Logo Organisasi</label>
+            <label for="gambar_anggota" class="text-sky-800 text-lg font-semibold block">Foto Anggota</label>
             <input type="hidden" name="oldImage" value="{{ $member->gambar_anggota }}">
             @if ($member->gambar_anggota)
                 <img src="{{ asset('storage/' . $member->gambar_anggota) }}" class="img-preview max-w-sm mb-3 col-sm-5 d-block">

@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./resources/views/**/*.php", "./resources/views/*.php"],
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+    ],
     theme: {
         container: {
             center: true,
@@ -36,9 +40,6 @@ export default {
             colors: {
                 primary: "#0284c7",
                 dark: "#0F172A",
-            },
-            screens: {
-                xl: "1120px",
             },
         },
     },
