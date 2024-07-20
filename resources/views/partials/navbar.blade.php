@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="flex items-center px-4">
-                <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                <button id="hamburger" name="hamburger" type="button" class="absolute block right-5 lg:hidden">
                     <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
                     <span class="transition duration-300 ease-in-out hamburger-line"></span>
                     <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
@@ -18,7 +18,7 @@
                 <nav id="nav-menu" class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                     <ul class="items-center block lg:flex">
                         <li class="p-3 lg:p-0 group">
-                            <a href="/" class="p-3 text-sm lg:mx-auto lg:m-0 text-dark hover:text-primary lg:text-white lg:group lg:p-0-hover:text-primary">Beranda</a>
+                            <a href="/" class="text-sm lg:mx-auto lg:m-0 text-dark hover:text-primary lg:text-white lg:group lg:p-0-hover:text-primary">Beranda</a>
                         </li>
                         <li class="relative p-3 lg:p-0 group">
                             <div class="dropdown">

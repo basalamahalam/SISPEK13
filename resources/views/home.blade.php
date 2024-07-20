@@ -154,7 +154,7 @@
                             <img src="{{ asset('storage/' . $berita[$i]->image) }}" alt="{{ $berita[$i]->image }}" class="max-h-[270px]">
                         </div>
                         <h3 class="mt-5 mb-3 text-xl font-semibold text-white">{{ $berita[$i]->title }}</h3>
-                        <article class="text-base font-medium text-slate-400">{!! Str::limit($berita[$i]->body, $limit = 60, $end = '...') !!}</article>
+                        <article class="text-base font-medium text-slate-400">{!! Str::limit($berita[$i]->body, $limit = 50, $end = '...') !!}</article>
                     </a>
                 </div>
             @endfor
@@ -191,12 +191,12 @@
             </div>
         </div>
     </div>
-    <a
+    {{-- <a
       href="#home"
-      class="h-14 w-14 bg-primary flex justify-center items-center rounded-full fixed z-index[9999] bottom-4 right-28 lg:right-4 p-4 hover:animate-pulse"
+      class="h-14 w-14 bg-primary flex justify-center items-center rounded-full fixed z-index[9999] bottom-4 right-4 p-4 hover:animate-pulse"
       id="to-top"
     >
       <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2"></span>
-    </a>
+    </a> --}}
   </section>
 @endsection
