@@ -17,10 +17,10 @@
                 </button>
                 <nav id="nav-menu" class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                     <ul class="items-center block lg:flex">
-                        <li class="p-3 group">
-                            <a href="/" class="text-sm lg:mx-auto lg:m-0 text-dark hover:text-primary lg:text-white lg:group p-3-hover:text-primary">Beranda</a>
+                        <li class="p-3 lg:p-0 group">
+                            <a href="/" class="p-3 text-sm lg:mx-auto lg:m-0 text-dark hover:text-primary lg:text-white lg:group lg:p-0-hover:text-primary">Beranda</a>
                         </li>
-                        <li class="relative p-3 group">
+                        <li class="relative p-3 lg:p-0 group">
                             <div class="dropdown">
                                 <button class="flex items-center ml-0 text-sm lg:ml-16 lg:m-0 text-dark hover:text-primary lg:text-white lg:group-hover:text-primary ">Tentang Kami<span class="w-1 h-1 ml-2 transform -rotate-45 border-b border-l border-white"></button>
                                 <ul class="relative hidden w-48 py-2 mx-auto text-sm bg-white border border-gray-300 rounded-lg dropdown-menu lg:absolute lg:left-0 lg:mt-2 text-dark">
@@ -31,7 +31,7 @@
                                 </ul>   
                             </div>
                         </li>
-                        <li class="relative p-3 group">
+                        <li class="relative p-3 lg:p-0 group">
                             <div class="dropdown">
                             <button class="flex items-center ml-0 text-sm lg:m-0 lg:ml-16 text-dark hover:text-primary lg:text-white lg:group-hover:text-primary ">Media<span class="w-1 h-1 ml-2 transform -rotate-45 border-b border-l border-white"></span></button>
                             <ul class="relative hidden w-48 py-2 mx-auto text-sm bg-white border border-gray-300 rounded-lg dropdown-menu lg:absolute lg:left-0 lg:mt-2 text-dark">
