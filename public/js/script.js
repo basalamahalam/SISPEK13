@@ -12,10 +12,14 @@ window.addEventListener("load", () => {
     }
 });
 
-window.onscroll = function () {
+function onScroll() {
     const header = document.querySelector("header");
-    const fixedNav = header.offsetTop;
     const toTop = document.querySelector("#to-top");
+
+    // Check if elements exist
+    if (!header || !toTop) return;
+
+    const fixedNav = header.offsetTop;
 
     if (window.pageYOffset > fixedNav) {
         header.classList.add("navbar-fixed");
@@ -26,7 +30,7 @@ window.onscroll = function () {
         toTop.classList.remove("flex");
         toTop.classList.add("hidden");
     }
-};
+}
 
 // hamburger
 const hamburger = document.querySelector("#hamburger");
