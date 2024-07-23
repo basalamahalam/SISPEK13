@@ -24,7 +24,7 @@
             @foreach ($data as $post)
             <div class="w-full p-4">
                 <div class="py-4 overflow-hidden shadow-lg bg-slate-800 rounded-xl">
-                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->image }}" class="w-[150px] mx-auto ">
+                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->image }}" class="w-[150px] mx-auto p-2">
                     <div class="flex flex-col items-center justify-center p-4">
                         <h3 class="block mb-3 text-xl font-semibold text-white truncate">{{ $post->name }}</h3>
                         <a href="/ekskul/{{ $post->slug }}" class="px-4 py-2 text-xs text-white rounded-lg font-small bg-primary hover:opacity-80">Selengkapnya</a>
