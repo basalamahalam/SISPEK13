@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('container')
-<section id="sejarah" class="pb-32 pt-36 bg-slate-600">
+<section id="sejarah" class="pb-32 pt-36 bg-slate-700">
     <div class="px-4 md:px-12 lg:px-20 2xl:px-44">
         <div class="mx-auto mb-10 text-center">
             <h4 class="font-semibold text-lg text-primary mb-2 tracking-[0.3rem]">SISPEK13</h4>
-            <h2 class="mb-4 text-2xl font-bold text-white lg:text-4xl">Sejarah <span class="font-semibold text-dark">Website</span></h2>
+            <h2 class="mb-4 text-2xl font-bold text-white lg:text-4xl">Sejarah <span class="font-semibold text-yellow-500">Website</span></h2>
         </div>
         <img src="../img/assets/bg-web.png" alt="sispek13" class="w-full mb-10 rounded-xl">
         <div class="p-4 rounded-lg shadow-lg bg-slate-800 shadow-dark">
