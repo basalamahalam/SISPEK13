@@ -55,7 +55,7 @@
             {{-- Trikora --}}
             @if($divisi->count())
                 <div class="w-full hiddens">
-                    <div class="relative w-3/4 mx-auto mb-16 overflow-hidden border-8 shadow-lg card md:w-1/2 md:w-1/2 lg:w-[30%] rounded-3xl border-dark shadow-dark">
+                    <div class="relative w-3/4 mx-auto mb-16 overflow-hidden border-8 shadow-lg card md:w-1/2 lg:w-[30%] rounded-3xl border-dark shadow-dark">
                         <img src="{{ asset('storage/' . $divisi[0]->gambar_divisi) }}" class="rounded-2xl">
                         <div class="absolute flex flex-col items-center justify-center text-center bg-opacity-70 bg-dark card-body">
                             <p class="mb-3 text-2xl font-semibold tracking-normal text-yellow-500 2xl:text-4xl">{{ $divisi[0]->nama_divisi }}</p>

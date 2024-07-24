@@ -243,7 +243,9 @@
                 <h2 class="text-sm font-medium text-yellow-500">{{ $data[0]->divisi->nama_divisi }}</h2>
             </div>
             <div class="justify-start block px-4 py-6 mb-10 lg:px-0 lg:flex lg:mb-16">
-                <img src="{{ asset('storage/' . $data[0]->divisi->gambar_divisi) }}" alt="{{ $data[0]->gambar_anggota }}" class="max-w-full lg:max-w-[350px] mb-5 lg:mb-0 lg:mr-20 rounded-3xl border-8 border-dark shadow-lg shadow-dark overflow-hidden">
+              <div class="p-4 md:p-10 xl:p-0 lg:mb-0 lg:mr-10 xl:mr-20 ">
+                <img src="{{ asset('storage/' . $data[0]->divisi->gambar_divisi) }}" alt="{{ $data[0]->gambar_anggota }}" class="max-w-full mb-5 overflow-hidden border-8 shadow-lg rounded-3xl border-dark shadow-dark">
+              </div>
                 <div class="p-2 lg:p-4">
                     <h2 class="font-bold @if($name == 'MPKK') text-blue-400 @else text-yellow-500 @endif text-2xl mr-5 md:text-3xl lg:text-4xl">{{ $data[0]->divisi->nama_divisi }}</h2>
                     <article class="mt-5 text-sm text-justify text-slate-200 lg:mb-0 lg:my-5 font-small md:text-base">
@@ -261,7 +263,7 @@
             <div class="w-full">
                 <div class="cards w-[60%] lg:w-1/6 mx-auto mb-16 relative rounded-3xl border-8 border-dark shadow-lg shadow-dark overflow-hidden">
                     <img src="{{ asset('storage/' . $data[0]->gambar_anggota) }}" class="rounded-2xl">
-                    <div class="absolute pt-4 text-center cards-body bg-opacity-70 bg-dark 2xl:h-[90%]">
+                    <div class="absolute pt-4 text-center cards-body bg-opacity-70 bg-dark 2xl:h-[90%] flex flex-col items-center justify-between">
                         <p class="mb-2 text-base font-semibold tracking-normal text-yellow-500 2xl:text-xl">{{ $data[0]->nama_anggota }}</p>
                         <p class="mb-4 text-sm tracking-normal text-white font-small 2xl:text-lg">"{{ $data[0]->kelas }}"</p>
                         <a href="{{ $data[0]->instagram_anggota }}" target="_blank" class="flex items-center justify-center w-1/4 px-2 py-2 mx-auto text-white transition-all duration-300 ease-in-out rounded-sm bg-dark hover:bg-primary">
