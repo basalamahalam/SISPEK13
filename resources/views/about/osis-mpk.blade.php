@@ -73,7 +73,7 @@
                             <div class="absolute flex flex-col items-center justify-center text-center bg-opacity-70 bg-dark card-body">
                             <p class="mb-3 text-2xl font-semibold tracking-normal text-yellow-500 2xl:text-4xl">{{ $divisi[$i - 1]->nama_divisi }}</p>
                             <p class="mb-5 text-base font-medium tracking-normal text-white 2xl:text-xl">"{{ $divisi[$i - 1]->bidang }}"</p>
-                            <a href="../{{ $org->nama_organisasi }}/{{ $divisi[0]->slug }}" class="px-6 py-2 text-xs font-medium text-white transition duration-300 ease-in-out rounded-full 2xl:text-base bg-sky-700 hover:shadow-lg hover:bg-primary">Lihat Pengurus</a>
+                            <a href="../{{ $org->nama_organisasi }}/{{ $divisi[$i - 1]->slug }}" class="px-6 py-2 text-xs font-medium text-white transition duration-300 ease-in-out rounded-full 2xl:text-base bg-sky-700 hover:shadow-lg hover:bg-primary">Lihat Pengurus</a>
                         </div>                           
                         </div>
                     @endfor
@@ -87,7 +87,7 @@
                             <div class="absolute flex flex-col items-center justify-center text-center bg-opacity-70 bg-dark card-body">
                             <p class="mb-3 text-2xl font-semibold tracking-normal text-yellow-500 2xl:text-4xl">{{ $div->nama_divisi }}</p>
                             <p class="mb-5 text-base font-medium tracking-normal text-white 2xl:text-xl">"{{ $div->nama_divisi }}"</p>
-                            <a href="../{{ $org->nama_organisasi }}/{{ $divisi[0]->slug }}" class="px-6 py-2 text-xs font-medium text-white transition duration-300 ease-in-out rounded-full 2xl:text-base bg-sky-700 hover:shadow-lg hover:bg-primary">Lihat Pengurus</a>
+                            <a href="../{{ $org->nama_organisasi }}/{{ $div->slug }}" class="px-6 py-2 text-xs font-medium text-white transition duration-300 ease-in-out rounded-full 2xl:text-base bg-sky-700 hover:shadow-lg hover:bg-primary">Lihat Pengurus</a>
                         </div>                           
                         </div>
                         @endif
