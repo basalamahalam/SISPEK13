@@ -92,7 +92,7 @@
 </style>
 <section id="home" class="pb-32 overflow-hidden pt-36 bg-dark">
    @if(session()->has('success'))
-        <div class="relative flex justify-between w-1/2 p-4 mx-auto text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
+        <div id="success-message" class="relative flex justify-between w-1/2 p-4 mx-auto text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
             {{ session('success') }}
             <button
                 class="font-bold text-green-600 hover:text-green-400 text-medium"
@@ -101,10 +101,19 @@
                 X
             </button>
         </div>
+
+        <script>
+            setTimeout(function() {
+                var successMessage = document.getElementById('success-message');
+                if (successMessage) {
+                    successMessage.style.display = 'none';
+                }
+            }, 3000);
+        </script>
     @endif
 
     <div class="items-center justify-center block px-4 md:px-12 2xl:px-48 lg:flex animate-fade-down">
-        <div class="block w-3/4 px-4 mx-auto mb-10 md:hidden">
+        <div class="block w-3/4 px-4 mx-auto mb-10 lg:hidden">
             <object data="img/assets/message.svg" type="image/svg+xml" id="animated-svg"></object>                 
         </div>
         <div class="w-full px-4 lg:mr-15">
@@ -131,7 +140,7 @@
             <h2 class="mb-4 text-2xl font-bold text-white sm:text-4xl lg:text-5xl">KIRIMAN MENFESS.</h2>
         </div>
     </div>
-    <div class="max-w-xs px-2 mx-auto mb-5 lg:max-w-2xl md:px-0">
+    <div class="max-w-xs px-2 mx-auto mb-5 md:max-w-2xl md:px-0">
         <div class="flex items-center justify-between transition duration-300 ease-in-out accordion-header hover:opacity-50">
             <h4 class="text-base font-medium tracking-wide text-white lg:text-lg">Menfess Bulan Ini <span>🙌</span></h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -166,7 +175,7 @@
             @endif
         </div>
     </div>    
-    <div class="max-w-xs px-2 mx-auto mb-5 lg:max-w-2xl md:px-0">
+    <div class="max-w-xs px-2 mx-auto mb-5 md:max-w-2xl md:px-0">
         <div class="flex items-center justify-between transition duration-300 ease-in-out accordion-header hover:bg-amber-600 hover:opacity-50">
             <h4 class="text-base font-medium tracking-wide text-white lg:text-lg">Menfess Terbaik Bulan Ini <span class="text-pink-500">❤</span></h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-caret-down-fill" viewBox="0 0 16 16">

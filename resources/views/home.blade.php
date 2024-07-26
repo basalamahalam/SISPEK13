@@ -3,7 +3,7 @@
 @section('container')
   <section id="home" class="pb-32 pt-36 bg-dark">
     @if(session()->has('success'))
-        <div class="relative flex justify-between w-1/2 p-4 mx-auto text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
+        <div id="success-id" class="relative flex justify-between w-1/2 p-4 mx-auto text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
             {{ session('success') }}
             <button
                 class="font-bold text-green-600 hover:text-green-400 text-medium"
@@ -12,6 +12,15 @@
                 X
             </button>
         </div>
+
+        <script>
+            setTimeout(function() {
+                var successMessage = document.getElementById('success-message');
+                if (successMessage) {
+                    successMessage.style.display = 'none';
+                }
+            }, 3000);
+        </script>
     @endif
     <div class="px-4 md:px-12 2xl:px-48 animate-fade-up">
         <div class="flex flex-wrap-reverse justify-center md:justify-between md:items-center">
