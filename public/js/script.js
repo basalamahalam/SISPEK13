@@ -7,19 +7,15 @@ window.addEventListener("load", () => {
 
         loader.addEventListener("transitionend", () => {
             console.log("Transition Ended");
-            document.body.removeChild(loader);
+            // document.body.removeChild(loader);
         });
     }
 });
 
-function onScroll() {
+window.onscroll = function () {
     const header = document.querySelector("header");
-    const toTop = document.querySelector("#to-top");
-
-    // Check if elements exist
-    if (!header || !toTop) return;
-
     const fixedNav = header.offsetTop;
+    const toTop = document.querySelector("#to-top");
 
     if (window.pageYOffset > fixedNav) {
         header.classList.add("navbar-fixed");
@@ -30,7 +26,7 @@ function onScroll() {
         toTop.classList.remove("flex");
         toTop.classList.add("hidden");
     }
-}
+};
 
 // hamburger
 const hamburger = document.querySelector("#hamburger");
