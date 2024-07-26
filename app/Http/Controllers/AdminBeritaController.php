@@ -77,7 +77,7 @@ class AdminBeritaController extends Controller
         ]);
 
         if($request->slug != $news->slug){
-            $input['slug'] = 'required|unique:newss';
+            $input['slug'] = 'required|unique:news';
         }
 
         $validatedData = $request->validate($input);
