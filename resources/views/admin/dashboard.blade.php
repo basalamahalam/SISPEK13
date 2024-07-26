@@ -3,136 +3,145 @@
 @section('container')
 <section class="ml-0 lg:ml-[250px] p-8">
     @if(session()->has('success'))
-        <div class="w-1/2 flex justify-between mx-auto bg-green-100 border-l-4 border-green-500 text-green-700 p-4 relative" role="alert">
+        <div id="success-message" class="relative flex justify-between w-1/2 p-4 mx-auto text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
             {{ session('success') }}
             <button
-                class=" text-green-600 hover:text-green-400 font-bold text-medium"
+                class="font-bold text-green-600 hover:text-green-400 text-medium"
                 onclick="this.parentElement.style.display='none'"
             >
                 X
             </button>
         </div>
+
+        <script>
+            setTimeout(() => {
+                var successMessage = document.getElementById('success-message');
+                if(successMessage){
+                    successMessage.style.display = 'none';
+                }
+            }, 3000);
+        </script>
     @endif
-    <h1 class="font-bold text-2xl text-dark mb-5">HALAMAN DASHBOARD {{ auth()->user()->name }}</h1>
+    <h1 class="mb-5 text-2xl font-bold text-dark">HALAMAN DASHBOARD {{ auth()->user()->name }}</h1>
     @if(auth()->user()->name == 'OSIS')
-    <p class="text-right text-base font-medium">OSIS</p>
+    <p class="text-base font-medium text-right">OSIS</p>
     <hr class="mb-5 border-slate-600">
     <div class="flex items-center justify-start mb-10">
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Jurnal</p>
-                <i class="bi bi-journal-richtext text-slate-300 text-3xl"></i>
+                <p class="font-medium text-white">Jurnal</p>
+                <i class="text-3xl bi bi-journal-richtext text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $jurnal }}</p>
-            <p class="text-white font-thin text-xm">Uploaded</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $jurnal }}</p>
+            <p class="font-thin text-white text-xm">Uploaded</p>
         </div>
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Berita</p>
-                <i class="bi bi-newspaper text-3xl text-slate-300"></i>
+                <p class="font-medium text-white">Berita</p>
+                <i class="text-3xl bi bi-newspaper text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $berita }}</p>
-            <p class="text-white font-thin text-xm">Uploaded</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $berita }}</p>
+            <p class="font-thin text-white text-xm">Uploaded</p>
         </div>
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Pendaftar</p>
-                <i class="bi bi-person-plus-fill text-3xl text-slate-300"></i>
+                <p class="font-medium text-white">Pendaftar</p>
+                <i class="text-3xl bi bi-person-plus-fill text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $pendaftar }}</p>
-            <p class="text-white font-thin text-xm">Registered</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $pendaftar }}</p>
+            <p class="font-thin text-white text-xm">Registered</p>
         </div>
     </div>
     @elseif(auth()->user()->name == 'MPK')
-    <p class="text-right text-base font-medium">MPK</p>
+    <p class="text-base font-medium text-right">MPK</p>
     <hr class="mb-5 border-slate-600">
     <div class="flex items-center justify-start">
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Menfess</p>
-                <i class="bi bi-chat-left-quote text-3xl text-slate-300"></i>
+                <p class="font-medium text-white">Menfess</p>
+                <i class="text-3xl bi bi-chat-left-quote text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $menfess }}</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $menfess }}</p>
             <div class="flex items-center">
-                <p class="text-red-500 font-bold text-xm mr-2">{{ $pending }}</p>
-                <p class="text-red-500 font-thin text-xm">Pending</p>
+                <p class="mr-2 font-bold text-red-500 text-xm">{{ $pending }}</p>
+                <p class="font-thin text-red-500 text-xm">Pending</p>
             </div>
         </div>
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Ekstrakurikuler</p>
-                <i class="bi bi-diagram-3-fill text-3xl text-slate-300"></i>
+                <p class="font-medium text-white">Ekstrakurikuler</p>
+                <i class="text-3xl bi bi-diagram-3-fill text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $ekskul }}</p>
-            <p class="text-white font-thin text-xm">Uploaded</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $ekskul }}</p>
+            <p class="font-thin text-white text-xm">Uploaded</p>
         </div>
-        <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+        <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
             <div class="flex items-center justify-between mb-5">
-                <p class="text-white font-medium">Pendaftar</p>
-                <i class="bi bi-person-plus-fill text-3xl text-slate-300"></i>
+                <p class="font-medium text-white">Pendaftar</p>
+                <i class="text-3xl bi bi-person-plus-fill text-slate-300"></i>
             </div>
-            <p class="text-5xl font-bold text-white mb-3">{{ $pendaftar }}</p>
-            <p class="text-white font-thin text-xm">Registered</p>
+            <p class="mb-3 text-5xl font-bold text-white">{{ $pendaftar }}</p>
+            <p class="font-thin text-white text-xm">Registered</p>
         </div>
     </div>
     @elseif(auth()->user()->name == 'Utama')
-        <p class="text-right text-base font-medium">OSIS</p>
+        <p class="text-base font-medium text-right">OSIS</p>
         <hr class="mb-5 border-slate-600">
         <div class="flex items-center justify-start mb-10">
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Jurnal</p>
-                    <i class="bi bi-journal-richtext text-slate-300 text-3xl"></i>
+                    <p class="font-medium text-white">Jurnal</p>
+                    <i class="text-3xl bi bi-journal-richtext text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $jurnal }}</p>
-                <p class="text-white font-thin text-xm">Uploaded</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $jurnal }}</p>
+                <p class="font-thin text-white text-xm">Uploaded</p>
             </div>
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Berita</p>
-                    <i class="bi bi-newspaper text-3xl text-slate-300"></i>
+                    <p class="font-medium text-white">Berita</p>
+                    <i class="text-3xl bi bi-newspaper text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $berita }}</p>
-                <p class="text-white font-thin text-xm">Uploaded</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $berita }}</p>
+                <p class="font-thin text-white text-xm">Uploaded</p>
             </div>
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Pendaftar</p>
-                    <i class="bi bi-person-plus-fill text-3xl text-slate-300"></i>
+                    <p class="font-medium text-white">Pendaftar</p>
+                    <i class="text-3xl bi bi-person-plus-fill text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $pendaftar_osis }}</p>
-                <p class="text-white font-thin text-xm">Registered</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $pendaftar_osis }}</p>
+                <p class="font-thin text-white text-xm">Registered</p>
             </div>
         </div>
-        <p class="text-right text-base font-medium">MPK</p>
+        <p class="text-base font-medium text-right">MPK</p>
         <hr class="mb-5 border-slate-600">
         <div class="flex items-center justify-start">
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Menfess</p>
-                    <i class="bi bi-chat-left-quote text-3xl text-slate-300"></i>
+                    <p class="font-medium text-white">Menfess</p>
+                    <i class="text-3xl bi bi-chat-left-quote text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $menfess }}</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $menfess }}</p>
                 <div class="flex items-center">
-                    <p class="text-red-500 font-bold text-xm mr-2">{{ $pending }}</p>
-                    <p class="text-red-500 font-thin text-xm">Pending</p>
+                    <p class="mr-2 font-bold text-red-500 text-xm">{{ $pending }}</p>
+                    <p class="font-thin text-red-500 text-xm">Pending</p>
                 </div>
             </div>
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Ekstrakurikuler</p>
-                    <i class="bi bi-diagram-3-fill text-3xl text-slate-300"></i>
+                    <p class="font-medium text-white">Ekstrakurikuler</p>
+                    <i class="text-3xl bi bi-diagram-3-fill text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $ekskul }}</p>
-                <p class="text-white font-thin text-xm">Uploaded</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $ekskul }}</p>
+                <p class="font-thin text-white text-xm">Uploaded</p>
             </div>
-            <div class="w-1/5 p-4 rounded-md bg-slate-700 mr-20">
+            <div class="w-1/5 p-4 mr-20 rounded-md bg-slate-700">
                 <div class="flex items-center justify-between mb-5">
-                    <p class="text-white font-medium">Pendaftar</p>
-                    <i class="bi bi-person-plus-fill text-3xl text-slate-300"></i>
+                    <p class="font-medium text-white">Pendaftar</p>
+                    <i class="text-3xl bi bi-person-plus-fill text-slate-300"></i>
                 </div>
-                <p class="text-5xl font-bold text-white mb-3">{{ $pendaftar_mpk }}</p>
-                <p class="text-white font-thin text-xm">Registered</p>
+                <p class="mb-3 text-5xl font-bold text-white">{{ $pendaftar_mpk }}</p>
+                <p class="font-thin text-white text-xm">Registered</p>
             </div>
         </div>
     @endif
