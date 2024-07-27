@@ -220,6 +220,23 @@
       <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2"></span>
     </a>
 <script>
+
+window.onscroll = function () {
+    const header = document.querySelector("header");
+    const fixedNav = header.offsetTop;
+    const toTop = document.querySelector("#to-top");
+
+    if (window.pageYOffset > fixedNav) {
+        header.classList.add("navbar-fixed");
+        toTop.classList.remove("hidden");
+        toTop.classList.add("flex");
+    } else {
+        header.classList.remove("navbar-fixed");
+        toTop.classList.remove("flex");
+        toTop.classList.add("hidden");
+    }
+};
+
    const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log(entry);

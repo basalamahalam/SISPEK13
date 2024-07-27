@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
-<section id="sendmenfess" class="pt-36 pb-32 bg-slate-700">
+<section id="sendmenfess" class="pb-32 pt-36 bg-slate-700">
     <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Calon Pengurus OSIS & MPK</h4>
+          <div class="max-w-xl mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-base font-semibold text-primary">Calon Pengurus OSIS & MPK</h4>
             <h2
-              class="font-bold text-dark text-2xl mb-4 sm:text-3xl lg:text-4xl dark:text-white tracking-widest"
+              class="mb-4 text-2xl font-bold tracking-widest text-dark sm:text-3xl md:text-4xl dark:text-white"
             >
               FORM PENDAFTARAN
             </h2>
@@ -15,13 +15,14 @@
         </div>
         <form method="post" action="/" enctype="multipart/form-data" class="form">
           @csrf
-          <div class=" py-8 px-6 w-full lg:w-2/3 lg:mx-auto bg-slate-800 rounded-lg">
+          <div class="w-full px-6 py-8 rounded-lg lg:w-2/3 lg:mx-auto bg-slate-800">
             <div class="mb-8">
-              <div class="flex justify-end items-center">
-                  <label for="pendaftar" class="w-1/2 text-base font-bold text-primary"
+              <div class="items-center justify-between block lg:flex">
+                  <label for="pendaftar" class="w-full text-sm font-bold md:text-base md:w-auto text-primary"
                   >Pendaftar</label>
+                  <div class="flex items-center justify-end w-auto md:w-1/2">
                   @if(old('pendaftar') == 'osis')
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
                         <input
                             type="radio"
                             id="osis"
@@ -32,7 +33,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="text-base font-medium text-white text-right w-1/4">
+                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
                         <input
                         type="radio"
                         id="mpk"
@@ -43,7 +44,7 @@
                         MPK
                       </label>
                   @elseif(old('pendaftar') == 'mpk')
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
                         <input
                         type="radio"
                         id="osis"
@@ -53,7 +54,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="text-base font-medium text-white text-right w-1/4">
+                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
                         <input
                         type="radio"
                         id="mpk"
@@ -65,7 +66,7 @@
                         MPK
                       </label>
                   @else
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
                         <input
                         type="radio"
                         id="osis"
@@ -75,7 +76,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="text-base font-medium text-white text-right w-1/4">
+                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
                         <input
                         type="radio"
                         id="mpk"
@@ -86,13 +87,14 @@
                         MPK
                       </label>
                   @endif
+                </div>
                   @error('pendaftar')
                     <div class="text-xs text-red-600">{{ $message }}</div>
                     @enderror
               </div>
             </div>
             <div class="mb-8">
-              <p class="text-base font-bold text-primary mb-2"
+              <p class="mb-2 text-sm font-bold md:text-base text-primary"
                 >Email</p
               >
               <input
@@ -108,7 +110,7 @@
                 @enderror
             </div>
             <div class="mb-8">
-              <p class="text-base font-bold text-primary mb-2"
+              <p class="mb-2 text-sm font-bold md:text-base text-primary"
                 >Nama Lengkap</p
               >
               <input
@@ -123,8 +125,8 @@
                     <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
             </div>
-            <div class=" mb-8 flex justify-between">
-              <label for="kelas" class="text-base font-bold text-primary"
+            <div class="flex justify-between mb-8 ">
+              <label for="kelas" class="text-sm font-bold md:text-base text-primary"
                 >Kelas</label
               >
               <div class="relative inline-block text-left">
@@ -145,12 +147,13 @@
                   </span>
               </div>
             </div>
-            <div class=" mb-8">
-              <div class="flex justify-start items-center">
-                  <label for="gender" class="w-1/2 text-base font-bold text-primary"
+            <div class="mb-8 ">
+              <div class="items-center justify-between block md:flex">
+                  <label for="gender" class="w-full text-sm font-bold md:w-auto md:text-base text-primary"
                   >Jenis Kelamin</label>
+                  <div class="flex items-center justify-end w-auto mt-2 md:mt-0">
                   @if(old('gender') == 'Laki-Laki')
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
                       <input
                           type="radio"
                           id="laki"
@@ -161,7 +164,7 @@
                       />
                       Laki-Laki
                   </label>
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
                       <input
                           type="radio"
                           id="perempuan"
@@ -172,7 +175,7 @@
                   Perempuan
                   </label>
                   @elseif(old('gender') == 'Perempuan')
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
                     <input
                         type="radio"
                         id="laki"
@@ -182,7 +185,7 @@
                     />
                     Laki-Laki
                 </label>
-                <label class="text-base font-medium text-white text-right w-1/4">
+                <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
                     <input
                         type="radio"
                         id="perempuan"
@@ -194,7 +197,7 @@
                 Perempuan
                 </label>
                   @else
-                  <label class="text-base font-medium text-white text-right w-1/4">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
                     <input
                         type="radio"
                         id="laki"
@@ -204,7 +207,7 @@
                     />
                     Laki-Laki
                 </label>
-                <label class="text-base font-medium text-white text-right w-1/4">
+                <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
                     <input
                         type="radio"
                         id="perempuan"
@@ -215,13 +218,14 @@
                 Perempuan
                 </label>
                   @endif
+              </div>
                   @error('gender')
                     <div class="text-xs text-red-600">{{ $message }}</div>
                     @enderror
               </div>
             </div>
-            <div class=" mb-8">
-              <p class="text-base font-bold text-primary mb-2"
+            <div class="mb-8 ">
+              <p class="mb-2 text-sm font-bold md:text-base text-primary"
                 >No WA</p>
               <input
                 type="text"
@@ -235,21 +239,19 @@
                     <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="flex justify-between items-start mb-8">
-              <label for="image" class="text-primary text-base font-bold mb-2">Foto 3x4</label>
-              <div>
+            <div class="items-start justify-between block mb-8 md:flex">
+              <label for="image" class="mb-2 text-sm font-bold md:text-base text-primary">Foto 3x4</label>
+              <div class="mt-2 md:mt-0">
                 <h1 class="sr-only">Choose file</h1>
-                <input class="block w-full border cursor-pointer bg-gray-300 border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 disabled:opacity-50 disabled:pointer-events-none
-                file:bg-gray-400 file:border-0 file:me-4
-                file:py-3 file:px-4" onchange="previewImage()" aria-describedby="file_input_help" id="file_input" type="file" name="image" required>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300 text-right" id="file_input_help">PNG, JPG (MAX. 512kb).</p> 
+                <input class="block w-full text-sm bg-gray-300 border border-gray-200 rounded-lg shadow-sm cursor-pointer focus:z-10 disabled:opacity-50 disabled:pointer-events-none file:bg-gray-400 file:border-0 file:me-4 file:py-3 file:px-4" onchange="previewImage()" aria-describedby="file_input_help" id="file_input" type="file" name="image" required>
+                <p class="mt-1 text-sm text-right text-gray-500 dark:text-gray-300" id="file_input_help">PNG, JPG (MAX. 512kb).</p> 
                   @error('image')
-                    <div class="text-xs text-red-600 text-right">{{ $message }}</div>
+                    <div class="text-xs text-right text-red-600">{{ $message }}</div>
                   @enderror
               </div>
             </div>
-            <div class=" mb-8">
-              <p class="text-base font-bold text-primary mb-2"
+            <div class="mb-8 ">
+              <p class="mb-2 text-sm font-bold md:text-base text-primary"
                 >Apa yang kamu ketahui tentang OSIS dan MPK</p>
               <textarea
                 type="text"
@@ -262,8 +264,8 @@
                 <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
             </div>
-            <div class=" mb-8">
-              <p class="text-base font-bold text-primary mb-2"
+            <div class="mb-8 ">
+              <p class="mb-2 text-sm font-bold md:text-base text-primary"
                 >Alasan ingin bergabung OSIS/MPK</p
               >
               <textarea
@@ -277,13 +279,13 @@
                 <div class="text-xs text-red-600">{{ $message }}</div>
                 @enderror
             </div>
-            <div class=" mb-8">
-              <p class="text-sm font-small text-white text-justify mb-5"
+            <div class="mb-8 ">
+              <p class="mb-5 text-sm text-justify text-white font-small"
                 >Dengan mengisi Formulir Pendaftaran Pengurus OSIS/MPK ini, maka saya secara sadar dan tanpa 
                 paksaan dari pihak manapun, serta atas sepengetahuan dan izin dari orang tua/wali murid 
                 untuk mengikuti Pendaftaran Pengurus OSIS/MPK Masa Bhakti 2019-2020.</p>
 
-                <label class="text-sm font-small text-white text-right w-1/4">
+                <label class="w-1/4 text-sm text-right text-white font-small">
                   <input
                       type="radio"
                       class="w-3 h-3 mr-2"
@@ -292,7 +294,7 @@
                 </label>
             </div>
               <button type="submit" name="submit" 
-                class="text-base bg-primary font-bold text-white py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                class="w-full px-8 py-3 text-sm font-bold text-white transition duration-500 rounded-full md:text-base bg-primary hover:opacity-80 hover:shadow-lg">
                 Kirim
               </button>
           </div>
