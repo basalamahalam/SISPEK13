@@ -20,9 +20,9 @@
               <div class="items-center justify-between block lg:flex">
                   <label for="pendaftar" class="w-full text-sm font-bold md:text-base md:w-auto text-primary"
                   >Pendaftar</label>
-                  <div class="flex items-center justify-end w-auto md:w-1/2">
+                  <div class="flex items-center justify-end w-auto md:w-full">
                   @if(old('pendaftar') == 'osis')
-                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                             type="radio"
                             id="osis"
@@ -33,7 +33,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
+                      <label class="w-auto ml-5 text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                         type="radio"
                         id="mpk"
@@ -44,7 +44,7 @@
                         MPK
                       </label>
                   @elseif(old('pendaftar') == 'mpk')
-                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                         type="radio"
                         id="osis"
@@ -54,7 +54,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
+                      <label class="w-auto ml-5 text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                         type="radio"
                         id="mpk"
@@ -66,7 +66,7 @@
                         MPK
                       </label>
                   @else
-                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-1/4">
+                  <label class="w-auto text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                         type="radio"
                         id="osis"
@@ -76,7 +76,7 @@
                         />
                         OSIS
                       </label>
-                      <label class="w-auto ml-6 text-sm font-medium text-right text-white md:text-base md:w-1/4 md:ml-0">
+                      <label class="w-auto ml-5 text-sm font-medium text-right text-white md:text-base md:w-fit">
                         <input
                         type="radio"
                         id="mpk"
@@ -153,7 +153,7 @@
                   >Jenis Kelamin</label>
                   <div class="flex items-center justify-end w-auto mt-2 md:mt-0">
                   @if(old('gender') == 'Laki-Laki')
-                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:w-fit md:text-base">
                       <input
                           type="radio"
                           id="laki"
@@ -164,7 +164,7 @@
                       />
                       Laki-Laki
                   </label>
-                  <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
+                  <label class="w-auto text-sm font-medium text-right text-white md:w-fit md:text-base">
                       <input
                           type="radio"
                           id="perempuan"
@@ -175,7 +175,7 @@
                   Perempuan
                   </label>
                   @elseif(old('gender') == 'Perempuan')
-                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:w-fit md:text-base">
                     <input
                         type="radio"
                         id="laki"
@@ -185,7 +185,7 @@
                     />
                     Laki-Laki
                 </label>
-                <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
+                <label class="w-auto text-sm font-medium text-right text-white md:w-fit md:text-base">
                     <input
                         type="radio"
                         id="perempuan"
@@ -197,7 +197,7 @@
                 Perempuan
                 </label>
                   @else
-                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:mr-0 md:w-1/4 md:text-base">
+                  <label class="w-auto mr-5 text-sm font-medium text-right text-white md:w-fit md:text-base">
                     <input
                         type="radio"
                         id="laki"
@@ -207,7 +207,7 @@
                     />
                     Laki-Laki
                 </label>
-                <label class="w-auto text-sm font-medium text-right text-white md:w-1/4 md:text-base">
+                <label class="w-auto text-sm font-medium text-right text-white md:w-fit md:text-base">
                     <input
                         type="radio"
                         id="perempuan"
