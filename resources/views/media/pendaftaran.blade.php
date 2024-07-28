@@ -5,7 +5,7 @@
     <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-base font-semibold text-primary">Calon Pengurus OSIS & MPK</h4>
+            <h4 class="mb-2 text-base font-semibold text-primary">Recruitment Pengurus OSIS & MPK</h4>
             <h2
               class="mb-4 text-2xl font-bold tracking-widest text-dark sm:text-3xl md:text-4xl dark:text-white"
             >
